@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <title>Snackbar</title>
   
+  <script type="module" crossorigin src="/https://github.com/HUWTUCH/goit-js-hw-10/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/https://github.com/HUWTUCH/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
+  <link rel="modulepreload" crossorigin href="/https://github.com/HUWTUCH/goit-js-hw-10/assets/vendor-651d7991.js">
+  <link rel="stylesheet" href="/https://github.com/HUWTUCH/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+  <link rel="stylesheet" href="/https://github.com/HUWTUCH/goit-js-hw-10/assets/2-snackbar-685ec466.css">
 </head>
 <body>
+<a href="../index.html">Go back</a>
+<form class="form">
+  <label>
+    Delay (ms)
+    <input type="number" name="delay" required />
+  </label>
 
-<script src="./js/2-snackbar.js"></script>
+  <fieldset>
+    <legend>State</legend>
+    <label>
+      <input type="radio" name="state" value="fulfilled" id="state-fulfilled" required />
+      Fulfilled
+    </label>
+    <label>
+      <input type="radio" name="state" value="rejected" id="state-rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button type="submit">Create notification</button>
+</form>
+
 </body>
 </html>
