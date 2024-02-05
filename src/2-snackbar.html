@@ -6,7 +6,27 @@
   <link rel="stylesheet" href="./css/2-snackbar.css">
 </head>
 <body>
+<a href="index.html">Go back</a>
+<form class="form">
+  <label>
+    Delay (ms)
+    <input type="number" name="delay" required />
+  </label>
 
-<script src="./js/2-snackbar.js"></script>
+  <fieldset>
+    <legend>State</legend>
+    <label>
+      <input type="radio" name="state" value="fulfilled" id="state-fulfilled" required />
+      Fulfilled
+    </label>
+    <label>
+      <input type="radio" name="state" value="rejected" id="state-rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button type="submit">Create notification</button>
+</form>
+<script type="module" src="./js/2-snackbar.js"></script>
 </body>
 </html>
